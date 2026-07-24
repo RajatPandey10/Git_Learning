@@ -1,7 +1,9 @@
 const login = ()=>{
     return <>
-        <h1>This is the login page</h1>
-        <div>This is the first div</div>
+        <h1>This is login page</h1>
+        <form>
+            Hey u can start to build the login form.
+        </form>
     </>
 }
 
