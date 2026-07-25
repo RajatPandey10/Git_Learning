@@ -18,6 +18,7 @@ const About = ()=>{
             <li className="ml-2 text-green-300"><span className="text-black bg-white px-2 py-1 rounded-lg ">git switch name_of_your_branch</span> :for switching from one branch to other </li>
             <li className="ml-2 text-green-300"><span className="text-black bg-white px-2 py-1 rounded-lg ">git merge your_branch_Name</span> :for merging branches. </li>
             <li className="ml-2 text-green-300"><span className="text-black bg-white px-2 py-1 rounded-lg ">git branch -d your_branch_name</span> :for deleting branche. </li>
+            <li className="ml-2 text-green-300"><span className="text-black bg-white px-2 py-1 rounded-lg ">git switch -C your_branch_name</span> :for switching and creating the branch through single command. </li>
         
         </div>
         <div className='flex flex-col gap-4'>
@@ -32,6 +33,48 @@ const About = ()=>{
             <li className="ml-2 text-green-300"><span className="text-black bg-white px-2 py-1 rounded-lg ">compare changes</span> :for comaprision. </li>
         
         </div>
+        <div className='flex flex-col gap-4'>
+            <h1 className='text-center text-lg bg-blue-300 text-black rounded mt-4'><span>Stashing</span></h1>
+            <p className="" >
+               Git Stash is a feature that temporarily saves your uncommitted changes and restores your working directory to the last committed state. It allows you to switch branches or work on another task without committing incomplete changes.
+               </p>
+            
+            <li className="ml-2 text-green-300"><span className="text-black bg-white px-2 py-1 rounded-lg ">git stash</span> :for saving the changes. </li>
+            <li className="ml-2 text-green-300"><span className="text-black bg-white px-2 py-1 rounded-lg ">git stash apply</span> :for getting those changes. </li>
+            <li className="ml-2 text-green-300"><span className="text-black bg-white px-2 py-1 rounded-lg ">git stash clear</span> :for clearing the data which saves in git. </li>
+            
+        
+        </div>
+        <div className='flex flex-col gap-4'>
+            <h1 className='text-center text-lg bg-blue-300 text-black rounded mt-4'><span>Steps for collaboration</span></h1>
+            <p className="" >
+                Collaboration in Git and GitHub is the process where multiple developers work on the same project simultaneously, contribute their changes independently using branches, and combine those changes through commits, pull requests, and merges.
+               </p>
+            <h1>There are some step to do collaborations.</h1>
+            <li className="ml-2 text-green-300">Learder should create initial file or configure all the requirements.</li>
+            <li className="ml-2 text-green-300">Then upload the files in github.
+                <div className='text-white flex flex-col gap-3'>Here are the steps to upload a file in github.
+                    <ol> <span className='text-black bg-white px-2 py-1 rounded-lg '>Step 1:</span> Create a Repository in your gitHub.[</ol>
+                    <ol> <span className='text-black bg-white px-2 py-1 rounded-lg '>Step 2:</span> In your project open the terminal. </ol>
+                    <ol> <span className='text-black bg-white px-2 py-1 rounded-lg '>Step 3:</span> git add . Frist command</ol>
+                    <ol> <span className='text-black bg-white px-2 py-1 rounded-lg '>Step 4:</span> git commit -m "Initial commit". Commit with your message </ol>
+                    <ol> <span className='text-black bg-white px-2 py-1 rounded-lg '>Step 5:</span> git remote add origin https://github.com/username/repository-name.git. Add your gitHub URL. </ol>
+                    <ol> <span className='text-black bg-white px-2 py-1 rounded-lg '>Step 6:</span> git remote -v  </ol>
+                    <ol> <span className='text-black bg-white px-2 py-1 rounded-lg '>Step 6:</span> git push -u origin main </ol>
+                </div>
+
+            </li>
+            <li className="ml-2 text-green-300">Leader will add the collaborators from gitHub.</li>
+            <li className="ml-2 text-green-300">Each teammate need to clone the main code file in their local system.</li>
+            <li className="ml-2 text-green-300">Teammates should create a branch for doing their task.</li>
+            <li className="ml-2 text-green-300">After completion of task should commit and push to the gitHub.</li>
+            <li className="ml-2 text-green-300">Inform the leader and the leader will get those changes in their local system thorough <span className= "text-black bg-white px-2 py-1 rounded-lg" >git fetch</span > and then <span className= "text-black bg-white px-2 py-1 rounded-lg" >git pull</span>.</li>
+            <li className="ml-2 text-green-300">After checking the work or merging leader can push the code to the github.</li>
+        
+        
+        </div>
+
+
     </div>
     </>
 }
