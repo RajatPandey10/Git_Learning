@@ -2,9 +2,9 @@ import {Link} from "react-router-dom";
 
 const Home = ()=>{
     return <>
-        <div className="bg-gray-800 text-white flex items-center justify-center mt-5  p-40 rounded-xl">
+        <div className="bg-gradient-to-br from-green-900 via-black to-green-900 flex  items-center justify-center ">
             <div className="text-center">
-                <h1 className='text-lg'>Welcome! <br/>
+                <h1 className='text-lg text-white'>Welcome! <br/>
 
                         This website showcases everything I have learned about Git and GitHub throughout my learning journey. The concepts presented here were learned through a YouTube tutorial and hands-on practice.
 
